@@ -20,8 +20,8 @@ const UploadProduct = () => {
     category: [],
     subCategory: [],
     unit: "",
-    stock: "",
     price: "",
+    stock: "",
     discount: "",
     description: "",
     more_details: {},
@@ -129,8 +129,8 @@ const UploadProduct = () => {
           category: [],
           subCategory: [],
           unit: "",
+          price:"",
           stock: "",
-          price: "",
           discount: "",
           description: "",
           more_details: {},
@@ -328,6 +328,9 @@ const UploadProduct = () => {
               </div>
             </div>
           </div>
+
+
+
           <div className="grid gap-1">
             <label htmlFor="unit">Unit</label>
             <input

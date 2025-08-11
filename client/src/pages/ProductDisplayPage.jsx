@@ -127,7 +127,9 @@ const ProductDisplayPage = () => {
           </div>
           <div>
             <p className="font-semibold">Unit</p>
-            <p className="text-base">{data.unit}</p>
+            <p className="text-base">
+              {data.unit}
+            </p>
           </div>
          
           {data?.more_details &&
@@ -146,7 +148,8 @@ const ProductDisplayPage = () => {
       <div className="p-4 lg:pl-7 text-base lg:text-lg">
         <p className="bg-green-400 w-fit px-2 rounded-full">10 min</p>
         <h2 className="text-lg font-semibold lg:text-3xl">{data.name}</h2>
-        <p className="">{data.unit}</p>
+        <p className="">{data.unit}
+        </p>
         <Divider />
         <div>
           <p>Price</p>
@@ -223,7 +226,9 @@ const ProductDisplayPage = () => {
           </div>
           <div>
             <p className="font-semibold">Unit</p>
-            <p className="text-base">{data.unit}</p>
+            <p className="text-base">
+              {data.unit}
+            </p>
           </div>
          
           {data?.more_details &&

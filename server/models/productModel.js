@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 
+
 const productSchema = new mongoose.Schema({
   name: {type: String},
   image: {type: Array, default: []},
@@ -7,9 +8,9 @@ const productSchema = new mongoose.Schema({
   subCategory: [
     {type: mongoose.Schema.ObjectId, ref: 'subCategory'}
   ],
-  unit: {type: String, default: ""},
-  stock : {type: Number, default: 0},
-  price : {type: Number, default: null},
+  unit: {type : String},
+  price: {type : Number},
+  stock: {type : Number},
   discount : {type: Number, default: null},
   description : {type : String, default: ""},
   more_details : {type: Object, default: {}},

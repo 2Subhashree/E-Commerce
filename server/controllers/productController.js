@@ -8,8 +8,8 @@ exports.createProduct = async (req, res) => {
       category,
       subCategory,
       unit,
-      stock,
       price,
+      stock,
       discount,
       description,
       more_details,
@@ -21,7 +21,6 @@ exports.createProduct = async (req, res) => {
       !category[0] ||
       !subCategory[0] ||
       !unit ||
-      !price ||
       !description
     ) {
       return res
@@ -35,8 +34,8 @@ exports.createProduct = async (req, res) => {
       category,
       subCategory,
       unit,
-      stock,
       price,
+      stock,
       discount,
       description,
       more_details,
@@ -92,6 +91,8 @@ exports.getProduct = async (req, res) => {
       totalCount: totalCount,
       totalNoPage: Math.ceil(totalCount / limit),
       data: data,
+      page,
+      limit
     });
   } catch (error) {
     return res

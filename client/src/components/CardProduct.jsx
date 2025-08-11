@@ -40,8 +40,7 @@ const CardProduct = ({data}) => {
           {data.name}
       </div>
       <div className='w-fit gap-1 px-2 lg:px-0 text-sm lg:text-base'>
-        {data.unit}
-        
+        {data.unit}     
       </div>
       <div className='px-2 lg:px-0 flex items-center justify-between gap-1 lg:gap-3 text-sm lg:text-base'>
         <div className='flex items-center gap-1'>
